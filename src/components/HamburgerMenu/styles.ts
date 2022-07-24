@@ -6,9 +6,10 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 40px;
-  position: absolute;
-  right: 12px;
-  top: 12px;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
 
   & > span {
     background: #fff;
