@@ -70,3 +70,27 @@ export const SocialMedia = styled.a`
     font-size: 32px;
   }
 `;
+
+export const InfoGrid = styled.div`
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 12px;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    font-size: 24px;
+  }
+
+  span {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 18px;
+  }
+`;

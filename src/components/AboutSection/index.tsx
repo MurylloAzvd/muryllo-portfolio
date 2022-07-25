@@ -1,11 +1,21 @@
 import {
   Container,
+  Info,
+  InfoGrid,
   ProfileImage,
   ProfileName,
   SocialMedia,
   SocialMediaContainer,
 } from "./styles";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaChevronRight,
+  FaBirthdayCake,
+  FaHome,
+  FaUniversity,
+  FaLanguage,
+} from "react-icons/fa";
 
 export const AboutSection = () => {
   return (
@@ -47,6 +57,25 @@ export const AboutSection = () => {
         </span>
         .
       </p>
+
+      <InfoGrid>
+        <Info>
+          <FaHome />
+          <span>Natal - RN, Brazil</span>
+        </Info>
+        <Info>
+          <FaBirthdayCake />
+          <span>Since 1998</span>
+        </Info>
+        <Info>
+          <FaUniversity />
+          <span>Information Technology (Dropout)</span>
+        </Info>
+        <Info>
+          <FaLanguage />
+          <span>Portuguese (Native) | English (Intermediary)</span>
+        </Info>
+      </InfoGrid>
     </Container>
   );
 };
