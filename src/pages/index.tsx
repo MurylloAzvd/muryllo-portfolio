@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AboutSection } from "../components/AboutSection";
 import { HamburgerMenu } from "../components/HamburgerMenu";
 import {
   Cover,
@@ -21,7 +22,7 @@ export default function Home() {
           <TypeWriterEffectContainer>
             <h2>Front-End Developer</h2>
           </TypeWriterEffectContainer>
-          <h1>Muryllo</h1>
+          <h1>{"< Muryllo />"}</h1>
           <DownloadResume
             href="http://www.africau.edu/images/default/sample.pdf"
             download
@@ -31,6 +32,7 @@ export default function Home() {
           </DownloadResume>
         </PresentationContainer>
       </Cover>
+      <AboutSection />
     </>
   );
 }
