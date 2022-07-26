@@ -15,6 +15,7 @@ import {
   FaHome,
   FaUniversity,
   FaLanguage,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 export const AboutSection = () => {
@@ -37,6 +38,13 @@ export const AboutSection = () => {
           rel="noreferrer"
         >
           <FaGithub />
+        </SocialMedia>
+        <SocialMedia
+          href="https://api.whatsapp.com/send?phone=5584988784881"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaWhatsapp />
         </SocialMedia>
       </SocialMediaContainer>
       <p>
