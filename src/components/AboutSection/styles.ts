@@ -71,7 +71,7 @@ export const SocialMedia = styled.a`
   }
 `;
 
-export const InfoGrid = styled.div`
+export const PersonalInfoGrid = styled.div`
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -79,7 +79,7 @@ export const InfoGrid = styled.div`
   grid-column-gap: 12px;
 `;
 
-export const Info = styled.div`
+export const PersonalInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Cover = styled.div`
+export const Container = styled.div`
   background-image: url("/cover.jpeg");
   height: 100vh;
   width: 100%;
