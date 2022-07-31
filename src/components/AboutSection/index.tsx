@@ -81,7 +81,7 @@ export const AboutSection = () => {
         </PersonalInfo>
         <PersonalInfo>
           <FaLanguage />
-          <span>Portuguese (Native) | English (Intermediary)</span>
+          <span>Portuguese (Native) | English (Intermediate)</span>
         </PersonalInfo>
       </PersonalInfoGrid>
     </Container>
