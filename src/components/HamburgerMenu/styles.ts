@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.div<ContainerProps>`
   width: 40px;
-  position: fixed;
+  position: absolute;
   right: 16px;
   top: 16px;
   cursor: pointer;
