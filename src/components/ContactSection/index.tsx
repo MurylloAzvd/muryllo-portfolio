@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import { Loading } from "../Loading";
 import { Container, FormContainer, ThankYouText } from "./styles";
 
@@ -22,17 +23,16 @@ export const ContactSection = () => {
     emailValidator(contact.email) &&
     contact.message;
 
-  const sleep = (ms: number) => {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  };
-
   const handleSubmit = async () => {
     setIsLoading(true);
-    await sleep(3000);
-    console.log(contact);
-    setContact({ email: "", message: "", name: "" });
+    try {
+      await axios.post("/api/contact", contact);
+      setIsSent(true);
+    } catch (error) {
+      console.log(error);
+    }
     setIsLoading(false);
-    setIsSent(true);
+    setContact({ email: "", message: "", name: "" });
   };
 
   return (
