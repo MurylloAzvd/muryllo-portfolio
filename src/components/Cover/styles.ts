@@ -80,7 +80,7 @@ export const TypeWriterEffectContainer = styled.div`
 `;
 
 export const DownloadResume = styled.a`
-  border: 1.2px solid #fff;
+  border: 1.2px solid rgb(0, 255, 255, 0.7);
   padding: 12px 16px;
   border-radius: 4px;
   font-size: 14px;
@@ -90,7 +90,10 @@ export const DownloadResume = styled.a`
   background-color: #000;
 
   &:hover {
-    box-shadow: 0 5px 5px -3px #fff;
+    box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+      1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+      2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+      2px 4px 16px 0px rgba(0, 255, 255, 0.7);
     transform: translateX(-2.5px);
     transition-duration: 0.3s;
   }
