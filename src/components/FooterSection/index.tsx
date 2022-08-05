@@ -5,7 +5,7 @@ export const Footer = () => {
     <Container>
       <span>
         {" "}
-        © 2021 <span>Muryllo Dev</span>
+        © 2022 - <span>Muryllo Dev</span>
       </span>
     </Container>
   );
