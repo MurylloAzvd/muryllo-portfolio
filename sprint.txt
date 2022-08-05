@@ -4,6 +4,7 @@
 -project detail
 -scroll animation
 -desktop
+-translate
 -scrollbar
 -song
 -clean up
