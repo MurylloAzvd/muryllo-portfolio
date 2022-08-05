@@ -1,0 +1,9 @@
+-specialties
+-sidemenu
+-projects
+-project detail
+-scroll animation
+-desktop
+-scrollbar
+-song
+-clean up
