@@ -7,4 +7,6 @@
 -translate
 -scrollbar
 -song
+-seo
 -clean up
+-domain
