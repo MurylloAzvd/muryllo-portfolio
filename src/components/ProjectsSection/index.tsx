@@ -14,14 +14,6 @@ export const ProjectsSection = () => {
           imageSrc="/projects/fretec/logo.png"
           technologies={["HTML 5", "SCSS/SASS", "Javascript", "React"]}
         />
-        <ProjectCard
-          title="Fretec"
-          description="The Fretec Entregas is an application for independent couriers who
-          want to carry out freight in the city of Natal/RN. The app gives the
-          delivery person a previously calculated smart route."
-          imageSrc="/projects/fretec/logo.png"
-          technologies={["HTML 5", "SCSS/SASS", "Javascript", "React"]}
-        />
       </ProjectsContainer>
 
       {/* 

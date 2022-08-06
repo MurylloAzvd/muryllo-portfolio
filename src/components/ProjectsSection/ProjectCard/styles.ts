@@ -6,15 +6,38 @@ export const Container = styled.div`
   border-radius: 16px;
   height: 400px;
 
+  /* rotate */
+  perspective: 1000px;
+  &:hover {
+    & > div {
+      transform: rotateY(180deg);
+    }
+  }
+
   & + & {
     margin-top: 32px;
   }
+`;
+
+// rotate
+export const InnerCard = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
 `;
 
 export const FrontCard = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  /* rotate */
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 
   img {
     width: 100%;
@@ -30,9 +53,16 @@ export const FrontCard = styled.div`
 `;
 
 export const BackCard = styled.div`
-  display: none;
+  display: flex;
   flex-direction: column;
   height: 100%;
+
+  /* rotate */
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 
   h2 {
     font-size: 24px;
