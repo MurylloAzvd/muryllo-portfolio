@@ -5,10 +5,12 @@ import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/FooterSection";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 import { SpecialtiesSection } from "../components/SpecialtiesSection";
+import { Menu } from "../components/Menu";
 
 export default function Home() {
   return (
     <>
+      <Menu />
       <Cover />
       <AboutSection />
       <SkillsSection />

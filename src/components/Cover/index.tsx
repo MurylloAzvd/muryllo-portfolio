@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { HamburgerMenu } from "../HamburgerMenu";
 import {
   Container,
   DownloadResume,
@@ -8,14 +6,8 @@ import {
 } from "./styles";
 
 export const Cover = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <Container>
-      <HamburgerMenu
-        isOpen={isMenuOpen}
-        onClick={() => setIsMenuOpen((prevState) => !prevState)}
-      />
       <PresentationContainer>
         <TypeWriterEffectContainer>
           <h2>Front-End Developer</h2>

@@ -11,7 +11,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 32px;
-  position: relative;
 
   &::before {
     content: "";
