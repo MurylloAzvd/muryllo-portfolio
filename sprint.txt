@@ -1,12 +1,18 @@
 -specialties
 -sidemenu
+
 -projects
+
 -project detail
+
 -scroll animation
 -desktop
+
 -translate
+
 -scrollbar
 -song
 -seo
+
 -clean up
 -domain
