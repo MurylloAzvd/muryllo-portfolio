@@ -2,16 +2,37 @@ import { Container } from "./styles";
 
 interface SideMenuProps {
   isOpen: boolean;
+  closeMenu: () => void;
 }
 
-export const SideMenu = ({ isOpen }: SideMenuProps) => {
+export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
   return (
     <Container isOpen={isOpen}>
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Specialties</li>
-      <li>Contact</li>
+      <li>
+        <a href="#" onClick={closeMenu}>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#about" onClick={closeMenu}>
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#skills" onClick={closeMenu}>
+          Skills
+        </a>
+      </li>
+      <li>
+        <a href="#specialties" onClick={closeMenu}>
+          Specialties
+        </a>
+      </li>
+      <li>
+        <a href="#contact" onClick={closeMenu}>
+          Contact
+        </a>
+      </li>
     </Container>
   );
 };

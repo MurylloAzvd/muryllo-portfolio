@@ -39,7 +39,7 @@ export const SkillsSection = () => {
   };
 
   return (
-    <Container>
+    <Container id="skills">
       <h1>Skills</h1>
       <SliderContainer>
         <Slider {...settings}>

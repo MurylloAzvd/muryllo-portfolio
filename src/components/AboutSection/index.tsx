@@ -22,7 +22,7 @@ import {
 
 export const AboutSection = () => {
   return (
-    <Container>
+    <Container id="about">
       <h1>About</h1>
       <ProfileImage src="/profile.png" />
       <ProfileName>Muryllo</ProfileName>

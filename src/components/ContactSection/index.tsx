@@ -36,7 +36,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <Container>
+    <Container id="contact">
       <h1>Contact</h1>
       <FormContainer
         onSubmit={(event) => {

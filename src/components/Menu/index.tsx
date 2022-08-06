@@ -5,13 +5,13 @@ import { SideMenu } from "./SideMenu";
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => setIsOpen((prevState) => !prevState);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <>
-      <HamburgerMenu
-        isOpen={isOpen}
-        onClick={() => setIsOpen((prevState) => !prevState)}
-      />
-      <SideMenu isOpen={isOpen} />
+      <HamburgerMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+      <SideMenu isOpen={isOpen} closeMenu={closeMenu} />
     </>
   );
 };

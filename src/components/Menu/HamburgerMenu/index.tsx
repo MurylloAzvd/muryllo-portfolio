@@ -2,12 +2,12 @@ import { Container } from "./styles";
 
 interface HamburgerMenuProps {
   isOpen: boolean;
-  onClick: () => void;
+  toggleMenu: () => void;
 }
 
-export const HamburgerMenu = ({ isOpen, onClick }: HamburgerMenuProps) => {
+export const HamburgerMenu = ({ isOpen, toggleMenu }: HamburgerMenuProps) => {
   return (
-    <Container isOpen={isOpen} onClick={onClick}>
+    <Container isOpen={isOpen} onClick={toggleMenu}>
       <span />
       <span />
       <span />

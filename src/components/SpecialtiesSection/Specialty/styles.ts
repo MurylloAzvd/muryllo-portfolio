@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const SpecialtyIConContainer = styled.div`
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 16px;
   border-radius: 50%;
 
