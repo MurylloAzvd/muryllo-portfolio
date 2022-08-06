@@ -79,7 +79,7 @@ export const TypeWriterEffectContainer = styled.div`
 `;
 
 export const DownloadResume = styled.a`
-  border: 1.2px solid rgb(0, 255, 255, 0.7);
+  border: 1px solid rgb(0, 255, 255, 0.7);
   padding: 12px 16px;
   border-radius: 4px;
   font-size: 14px;
