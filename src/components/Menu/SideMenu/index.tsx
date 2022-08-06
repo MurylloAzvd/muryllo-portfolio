@@ -7,10 +7,11 @@ interface SideMenuProps {
 export const SideMenu = ({ isOpen }: SideMenuProps) => {
   return (
     <Container isOpen={isOpen}>
-      <li>Sobre</li>
+      <li>Home</li>
+      <li>About</li>
       <li>Skills</li>
-      <li>Portfolio</li>
-      <li>Contato</li>
+      <li>Specialties</li>
+      <li>Contact</li>
     </Container>
   );
 };
