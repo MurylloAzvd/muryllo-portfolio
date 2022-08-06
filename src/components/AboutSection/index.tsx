@@ -8,13 +8,15 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+import { PersonalInfo } from "./PersonalInfo";
+import { SocialMediaLink } from "./SocialMediaLink";
+
 import {
+  AboutText,
   Container,
-  PersonalInfo,
   PersonalInfoGrid,
   ProfileImage,
   ProfileName,
-  SocialMedia,
   SocialMediaContainer,
 } from "./styles";
 
@@ -25,34 +27,25 @@ export const AboutSection = () => {
       <ProfileImage src="/profile.png" />
       <ProfileName>Muryllo</ProfileName>
       <SocialMediaContainer>
-        <SocialMedia
+        <SocialMediaLink
           href="https://www.linkedin.com/in/muryllodev"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </SocialMedia>
-        <SocialMedia
+          Icon={FaLinkedin}
+        />
+        <SocialMediaLink
           href="https://github.com/MurylloAzvd"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaGithub />
-        </SocialMedia>
-        <SocialMedia
+          Icon={FaGithub}
+        />
+        <SocialMediaLink
           href="https://api.whatsapp.com/send?phone=5584988784881"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaWhatsapp />
-        </SocialMedia>
+          Icon={FaWhatsapp}
+        />
       </SocialMediaContainer>
-      <p>
+      <AboutText>
         Passionate about <span>technology</span>. What inspires me is knowing
         that I can help create systems that can be used by thousands of people
         around the world.
-      </p>
-      <p>
+      </AboutText>
+      <AboutText>
         Currently working as a <span>Front-end</span> developer, developing{" "}
         <span>web</span> and <span>mobile</span> applications. Using as a tool,
         technologies such as:{" "}
@@ -64,25 +57,19 @@ export const AboutSection = () => {
           Next.js, Formik
         </span>
         .
-      </p>
+      </AboutText>
 
       <PersonalInfoGrid>
-        <PersonalInfo>
-          <FaHome />
-          <span>Natal - RN, Brazil</span>
-        </PersonalInfo>
-        <PersonalInfo>
-          <FaBirthdayCake />
-          <span>Since 1998</span>
-        </PersonalInfo>
-        <PersonalInfo>
-          <FaUniversity />
-          <span>Information Technology (Dropout)</span>
-        </PersonalInfo>
-        <PersonalInfo>
-          <FaLanguage />
-          <span>Portuguese (Native) | English (Intermediate)</span>
-        </PersonalInfo>
+        <PersonalInfo Icon={FaHome} info="Natal - RN, Brazil" />
+        <PersonalInfo Icon={FaBirthdayCake} info="Since 1998" />
+        <PersonalInfo
+          Icon={FaUniversity}
+          info="Information Technology (Dropout)"
+        />
+        <PersonalInfo
+          Icon={FaLanguage}
+          info="Portuguese (Native) | English (Intermediate)"
+        />
       </PersonalInfoGrid>
     </Container>
   );

@@ -12,17 +12,17 @@ export const Container = styled.section`
     font-size: 28px;
     text-transform: uppercase;
   }
+`;
 
-  p {
-    font-size: 18px;
-    text-align: justify;
-    line-height: 24px;
-    font-weight: 200;
-    margin-top: 12px;
+export const AboutText = styled.p`
+  font-size: 18px;
+  text-align: justify;
+  line-height: 24px;
+  font-weight: 200;
+  margin-top: 12px;
 
-    span {
-      font-weight: bold;
-    }
+  span {
+    font-weight: bold;
   }
 `;
 
@@ -47,50 +47,10 @@ export const SocialMediaContainer = styled.div`
   }
 `;
 
-export const SocialMedia = styled.a`
-  &::after {
-    content: "";
-    display: block;
-    border-bottom: 2px solid white;
-    height: 2px;
-    margin-top: 4px;
-    width: 100%;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    border-radius: 4px;
-  }
-
-  &:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-
-  svg {
-    font-size: 32px;
-  }
-`;
-
 export const PersonalInfoGrid = styled.div`
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 24px;
   grid-column-gap: 12px;
-`;
-
-export const PersonalInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  svg {
-    font-size: 24px;
-  }
-
-  span {
-    text-align: center;
-    margin-top: 8px;
-    line-height: 18px;
-  }
 `;
