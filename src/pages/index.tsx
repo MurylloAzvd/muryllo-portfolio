@@ -6,6 +6,7 @@ import { Footer } from "../components/FooterSection";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 import { SpecialtiesSection } from "../components/SpecialtiesSection";
 import { Menu } from "../components/Menu";
+import { ProjectsSection } from "../components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -14,16 +15,7 @@ export default function Home() {
       <Cover />
       <AboutSection />
       <SkillsSection />
-      {/* 
-        Projects
-
-        -Fretec
-        -Desopila
-        -Resolve tudo
-        -Cardiometrics
-        -Confia.shop
-
-      */}
+      <ProjectsSection />
       <SpecialtiesSection />
       <ContactSection />
       <Footer />

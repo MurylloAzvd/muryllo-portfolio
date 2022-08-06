@@ -24,6 +24,11 @@ export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
         </a>
       </li>
       <li>
+        <a href="#projects" onClick={closeMenu}>
+          Projects
+        </a>
+      </li>
+      <li>
         <a href="#specialties" onClick={closeMenu}>
           Specialties
         </a>
