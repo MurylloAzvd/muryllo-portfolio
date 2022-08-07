@@ -35,7 +35,7 @@ export const ProjectCard = ({
               <Technology key={tech}>{tech}</Technology>
             ))}
           </TechnologiesContainer>
-          <button>Access</button>
+          <button>See more</button>
         </BackCard>
       </InnerCard>
     </Container>

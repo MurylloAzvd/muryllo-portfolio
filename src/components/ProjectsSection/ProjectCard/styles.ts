@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #262626;
-  padding: 12px 24px;
+  padding: 24px;
   border-radius: 16px;
   height: 400px;
+  width: 100%;
+  max-width: 360px;
 
-  /* rotate */
   perspective: 1000px;
+
   &:hover {
     & > div {
       transform: rotateY(180deg);
@@ -19,7 +21,6 @@ export const Container = styled.div`
   }
 `;
 
-// rotate
 export const InnerCard = styled.div`
   position: relative;
   width: 100%;
@@ -33,7 +34,6 @@ export const FrontCard = styled.div`
   flex-direction: column;
   height: 100%;
 
-  /* rotate */
   position: absolute;
   width: 100%;
   -webkit-backface-visibility: hidden;
@@ -43,6 +43,7 @@ export const FrontCard = styled.div`
     width: 100%;
     max-height: 280px;
     border-radius: 16px;
+    object-fit: cover;
   }
 
   h2 {
@@ -57,7 +58,6 @@ export const BackCard = styled.div`
   flex-direction: column;
   height: 100%;
 
-  /* rotate */
   position: absolute;
   width: 100%;
   -webkit-backface-visibility: hidden;
