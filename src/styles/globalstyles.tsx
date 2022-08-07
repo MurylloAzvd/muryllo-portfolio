@@ -69,6 +69,23 @@ const GlobalStyle = createGlobalStyle`
     overflow: clip visible ;
   }
   
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .slick-dots li button:before {
+    font-size: 20px;
+    color: white;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #fff
+  }
+
+  .slick-dots {
+    position: relative;
+  }
 `;
 
 export default GlobalStyle;
