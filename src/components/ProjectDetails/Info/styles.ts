@@ -18,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const LinkContainer = styled.div`
-  margin-top: 16px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 
