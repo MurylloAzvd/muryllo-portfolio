@@ -3,12 +3,24 @@ import { ImagesSlider } from "./ImagesSlider";
 import { Info } from "./Info";
 import { Container } from "./styles";
 
-export const ProjectDetails = () => {
+interface ProjectDetailsProps {
+  title: string;
+  description: string;
+  link: string;
+  images: string[];
+}
+
+export const ProjectDetails = ({
+  description,
+  images,
+  link,
+  title,
+}: ProjectDetailsProps) => {
   return (
     <Container>
-      <Header />
-      <ImagesSlider />
-      <Info />
+      <Header projectTitle={title} />
+      <ImagesSlider images={images} />
+      <Info description={description} link={link} title={title} />
     </Container>
   );
 };

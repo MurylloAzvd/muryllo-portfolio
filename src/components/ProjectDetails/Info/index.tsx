@@ -1,23 +1,20 @@
 import { Container, LinkContainer } from "./styles";
 
-export const Info = () => {
+interface InfoProps {
+  title: string;
+  description: string;
+  link: string;
+}
+
+export const Info = ({ description, link, title }: InfoProps) => {
   return (
     <Container>
-      <h1>Fretec Entregas</h1>
-      <p>
-        The Fretec Entregas is an application for independent couriers who want
-        to carry out freight in the city of Natal/RN. We work with the following
-        categories of vehicles: motorcycle, utility car (light and medium
-        pickups) and truck. The app gives the delivery person a previously
-        calculated smart route.
-      </p>
+      <h1>{title}</h1>
+      <p>{description}</p>
       <LinkContainer>
         <span>Link:</span>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.fretecentregas"
-          target="blank"
-        >
-          https://play.google.com/store/apps/details?id=com.fretecentregas
+        <a href={link} target="blank">
+          {link}
         </a>
       </LinkContainer>
     </Container>
