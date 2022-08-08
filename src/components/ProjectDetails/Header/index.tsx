@@ -7,7 +7,7 @@ export const Header = () => {
       <TabsBarContainer>
         <TabBar>Home</TabBar>
         <DividerTabs>/</DividerTabs>
-        <TabBar selected>Fretec</TabBar>
+        <TabBar selected>Fretec Entregas</TabBar>
       </TabsBarContainer>
     </Container>
   );

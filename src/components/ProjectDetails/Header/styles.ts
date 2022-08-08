@@ -6,7 +6,7 @@ interface TabBarProps {
 
 export const Container = styled.header`
   color: #fff;
-  padding: 32px 16px;
+  padding: 24px 16px;
   background-color: #262626;
 
   h1 {
@@ -22,7 +22,7 @@ export const TabsBarContainer = styled.div`
 `;
 
 export const DividerTabs = styled.span`
-  margin: 0px 16px;
+  margin: 0px 12px;
 `;
 
 export const TabBar = styled.span<TabBarProps>`
