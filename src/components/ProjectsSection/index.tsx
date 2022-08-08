@@ -11,7 +11,7 @@ export const ProjectsSection = () => {
           description="The Fretec Entregas is an application for independent couriers who
           want to carry out freight in the city of Natal/RN. The app gives the
           delivery person a previously calculated smart route."
-          imageSrc="/projects/fretec/logo.png"
+          logo="/projects/fretec/logo.png"
           technologies={[
             "React",
             "Bootstrap",
@@ -19,17 +19,19 @@ export const ProjectsSection = () => {
             "React Native",
             "Firabase",
           ]}
+          pageLink="/fretec"
         />
         <ProjectCard
           title="Desopila App"
           description="App focused on location advertising for lease, such as: farms, inns, speedboats. Connecting Environment Owners with potential users."
-          imageSrc="/projects/desopila/logo.png"
+          logo="/projects/desopila/logo.png"
           technologies={["React Native", "Context API"]}
+          pageLink="/fretec"
         />
         <ProjectCard
           title="Resolve Tudo"
           description="App to find any type of service provider quickly and easily."
-          imageSrc="/projects/resolve-tudo/logo.webp"
+          logo="/projects/resolve-tudo/logo.webp"
           technologies={[
             "React",
             "Typescript",
@@ -37,11 +39,12 @@ export const ProjectsSection = () => {
             "React Native",
             "Context API",
           ]}
+          pageLink="/fretec"
         />
         <ProjectCard
           title="Cardiometrics"
           description="Cardiologists with different specialties who aim to form a medical opinion team, with multidisciplinary integration as a way of promoting knowledge and assistance in cardiology."
-          imageSrc="/projects/cardiometrics/logo.jpg"
+          logo="/projects/cardiometrics/logo.jpg"
           technologies={[
             "React",
             "Typescript",
@@ -51,17 +54,19 @@ export const ProjectsSection = () => {
             "Expo",
             "Context API",
           ]}
+          pageLink="/fretec"
         />
         <ProjectCard
           title="Confia.shop"
           description="Confia.shop is a platform for selling products through a digital menu. The idea is that customers can choose and pay for your products without the need for a salesperson nearby."
-          imageSrc="/projects/confia-shop/logo.png"
+          logo="/projects/confia-shop/logo.png"
           technologies={[
             "React",
             "Typescript",
             "Styled Components",
             "Context API",
           ]}
+          pageLink="/fretec"
         />
       </ProjectsContainer>
     </Container>

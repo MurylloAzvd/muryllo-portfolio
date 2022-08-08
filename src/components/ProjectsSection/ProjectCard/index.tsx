@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Container,
   BackCard,
@@ -10,21 +11,23 @@ import {
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageSrc: string;
+  logo: string;
   technologies: string[];
+  pageLink: string;
 }
 
 export const ProjectCard = ({
   description,
-  imageSrc,
+  logo,
   technologies,
   title,
+  pageLink,
 }: ProjectCardProps) => {
   return (
     <Container>
       <InnerCard>
         <FrontCard>
-          <img src={imageSrc} alt={title} />
+          <img src={logo} alt={title} />
           <h2>{title}</h2>
         </FrontCard>
         <BackCard>
@@ -35,7 +38,9 @@ export const ProjectCard = ({
               <Technology key={tech}>{tech}</Technology>
             ))}
           </TechnologiesContainer>
-          <button>See more</button>
+          <Link href={pageLink} passHref>
+            <button>See more</button>
+          </Link>
         </BackCard>
       </InnerCard>
     </Container>

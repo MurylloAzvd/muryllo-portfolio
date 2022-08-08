@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container, DividerTabs, TabBar, TabsBarContainer } from "./styles";
 
 interface HeaderProps {
@@ -9,7 +10,9 @@ export const Header = ({ projectTitle }: HeaderProps) => {
     <Container>
       <h1>Project Details</h1>
       <TabsBarContainer>
-        <TabBar>Home</TabBar>
+        <Link href="/" passHref>
+          <TabBar>Home</TabBar>
+        </Link>
         <DividerTabs>/</DividerTabs>
         <TabBar selected>{projectTitle}</TabBar>
       </TabsBarContainer>

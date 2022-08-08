@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "./styles";
 
 interface SideMenuProps {
@@ -9,34 +10,34 @@ export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
   return (
     <Container isOpen={isOpen}>
       <li>
-        <a href="#" onClick={closeMenu}>
-          Home
-        </a>
+        <Link href="/#" passHref>
+          <a onClick={closeMenu}>Home</a>
+        </Link>
       </li>
       <li>
-        <a href="#about" onClick={closeMenu}>
-          About
-        </a>
+        <Link href="/#about" passHref>
+          <a onClick={closeMenu}>About</a>
+        </Link>
       </li>
       <li>
-        <a href="#skills" onClick={closeMenu}>
-          Skills
-        </a>
+        <Link href="/#skills" passHref>
+          <a onClick={closeMenu}>Skills</a>
+        </Link>
       </li>
       <li>
-        <a href="#projects" onClick={closeMenu}>
-          Projects
-        </a>
+        <Link href="/#projects" passHref>
+          <a onClick={closeMenu}>Projects</a>
+        </Link>
       </li>
       <li>
-        <a href="#specialties" onClick={closeMenu}>
-          Specialties
-        </a>
+        <Link href="/#specialties" passHref>
+          <a onClick={closeMenu}>Specialties</a>
+        </Link>
       </li>
       <li>
-        <a href="#contact" onClick={closeMenu}>
-          Contact
-        </a>
+        <Link href="/#contact" passHref>
+          <a onClick={closeMenu}>Contact</a>
+        </Link>
       </li>
     </Container>
   );
