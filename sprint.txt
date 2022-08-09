@@ -1,5 +1,4 @@
--project detail
-
+-personal image
 -scroll animation
 -desktop
 
