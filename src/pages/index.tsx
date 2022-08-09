@@ -11,8 +11,8 @@ export default function Home() {
       <Cover />
       <AboutSection />
       <SkillsSection />
-      <ProjectsSection />
       <SpecialtiesSection />
+      <ProjectsSection />
       <ContactSection />
     </>
   );

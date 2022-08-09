@@ -25,13 +25,13 @@ export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
         </Link>
       </li>
       <li>
-        <Link href="/#projects" passHref>
-          <a onClick={closeMenu}>Projects</a>
+        <Link href="/#specialties" passHref>
+          <a onClick={closeMenu}>Specialties</a>
         </Link>
       </li>
       <li>
-        <Link href="/#specialties" passHref>
-          <a onClick={closeMenu}>Specialties</a>
+        <Link href="/#projects" passHref>
+          <a onClick={closeMenu}>Projects</a>
         </Link>
       </li>
       <li>
