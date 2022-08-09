@@ -11,6 +11,8 @@ export default function Fretec() {
         "https://muryllodeveloper.web.app/assets/img/portfolio/fretec2.webp",
         "https://muryllodeveloper.web.app/assets/img/portfolio/fretec3.webp",
         "https://muryllodeveloper.web.app/assets/img/portfolio/fretec5.png",
+        "/projects/resolve-tudo/resolve1.webp",
+        "/projects/resolve-tudo/resolve8.png",
       ]}
     />
   );
