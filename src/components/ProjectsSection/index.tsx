@@ -26,7 +26,7 @@ export const ProjectsSection = () => {
           description="App focused on location advertising for lease, such as: farms, inns, speedboats. Connecting Environment Owners with potential users."
           logo="/projects/desopila/logo.png"
           technologies={["React Native", "Context API"]}
-          pageLink="/fretec"
+          pageLink="/desopila"
         />
         <ProjectCard
           title="Resolve Tudo"
@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
             "React Native",
             "Context API",
           ]}
-          pageLink="/fretec"
+          pageLink="/resolve-tudo"
         />
         <ProjectCard
           title="Cardiometrics"
@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
             "Expo",
             "Context API",
           ]}
-          pageLink="/fretec"
+          pageLink="/cardiometrics"
         />
         <ProjectCard
           title="Confia.shop"
@@ -66,7 +66,7 @@ export const ProjectsSection = () => {
             "Styled Components",
             "Context API",
           ]}
-          pageLink="/fretec"
+          pageLink="/confia-shop"
         />
       </ProjectsContainer>
     </Container>

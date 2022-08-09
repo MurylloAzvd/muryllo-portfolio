@@ -4,15 +4,17 @@ export default function Fretec() {
   return (
     <ProjectDetails
       title="Fretec Entregas"
-      description="The Fretec Entregas is an application for independent couriers who want to carry out freight in the city of Natal/RN. We work with the following categories of vehicles: motorcycle, utility car (light and medium pickups) and truck. The app gives the delivery person a previously calculated smart route."
+      description="The Fretec Entregas is an application for independent couriers who
+      want to carry out freight in the city of Natal/RN. The app gives the
+      delivery person a previously calculated smart route."
       link="https://play.google.com/store/apps/details?id=com.fretecentregas"
       images={[
-        "https://muryllodeveloper.web.app/assets/img/portfolio/fretec1.png",
-        "https://muryllodeveloper.web.app/assets/img/portfolio/fretec2.webp",
-        "https://muryllodeveloper.web.app/assets/img/portfolio/fretec3.webp",
-        "https://muryllodeveloper.web.app/assets/img/portfolio/fretec5.png",
-        "/projects/resolve-tudo/resolve1.webp",
-        "/projects/resolve-tudo/resolve8.png",
+        "/projects/fretec/fretec1.png",
+        "/projects/fretec/fretec6.jpg",
+        "/projects/fretec/fretec2.webp",
+        "/projects/fretec/fretec3.webp",
+        "/projects/fretec/fretec4.webp",
+        "/projects/fretec/fretec5.jpg",
       ]}
     />
   );

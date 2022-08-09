@@ -6,7 +6,7 @@ import { Container } from "./styles";
 interface ProjectDetailsProps {
   title: string;
   description: string;
-  link: string;
+  link?: string;
   images: string[];
 }
 
