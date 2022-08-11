@@ -14,7 +14,6 @@ import { SocialMediaLink } from "./SocialMediaLink";
 import {
   AboutText,
   Container,
-  PersonalImage,
   PersonalInfoGrid,
   ProfileImage,
   ProfileName,
@@ -59,8 +58,6 @@ export const AboutSection = () => {
         </span>
         .
       </AboutText>
-
-      <PersonalImage src="/imd.jpeg" alt="personal image" />
 
       <PersonalInfoGrid>
         <PersonalInfo Icon={FaHome} info="Natal - RN, Brazil" />
