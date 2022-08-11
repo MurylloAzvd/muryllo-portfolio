@@ -14,8 +14,8 @@ export default function ConfiaShop() {
         "/projects/confia-shop/confia8.jpg",
         "/projects/confia-shop/confia9.jpg",
         "/projects/confia-shop/confia3.jpeg",
-        "/projects/confia-shop/confia4.jpg",
         "/projects/confia-shop/confia5.jpg",
+        "/projects/confia-shop/confia4.jpg",
         "/projects/confia-shop/confia13.png",
         "/projects/confia-shop/confia14.png",
       ]}

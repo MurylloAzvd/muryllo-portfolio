@@ -14,6 +14,7 @@ import { SocialMediaLink } from "./SocialMediaLink";
 import {
   AboutText,
   Container,
+  PersonalImage,
   PersonalInfoGrid,
   ProfileImage,
   ProfileName,
@@ -24,7 +25,7 @@ export const AboutSection = () => {
   return (
     <Container id="about">
       <h1>About</h1>
-      <ProfileImage src="/profile.png" />
+      <ProfileImage src="/profile.png" alt="avatar" />
       <ProfileName>Muryllo</ProfileName>
       <SocialMediaContainer>
         <SocialMediaLink
@@ -59,12 +60,14 @@ export const AboutSection = () => {
         .
       </AboutText>
 
+      <PersonalImage src="/imd.jpeg" alt="personal image" />
+
       <PersonalInfoGrid>
         <PersonalInfo Icon={FaHome} info="Natal - RN, Brazil" />
         <PersonalInfo Icon={FaBirthdayCake} info="Since 1998" />
         <PersonalInfo
           Icon={FaUniversity}
-          info="Information Technology (Dropout)"
+          info="Information Technology - IMD/UFRN"
         />
         <PersonalInfo
           Icon={FaLanguage}

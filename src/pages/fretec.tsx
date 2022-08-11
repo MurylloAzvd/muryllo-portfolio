@@ -10,10 +10,11 @@ export default function Fretec() {
       link="https://play.google.com/store/apps/details?id=com.fretecentregas"
       images={[
         "/projects/fretec/fretec1.png",
-        "/projects/fretec/fretec6.jpg",
         "/projects/fretec/fretec2.webp",
-        "/projects/fretec/fretec3.webp",
         "/projects/fretec/fretec4.webp",
+        "/projects/fretec/fretec3.webp",
+        "/projects/fretec/fretec7.webp",
+        "/projects/fretec/fretec6.jpg",
         "/projects/fretec/fretec5.jpg",
       ]}
     />

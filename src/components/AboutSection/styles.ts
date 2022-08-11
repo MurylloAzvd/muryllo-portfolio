@@ -47,6 +47,16 @@ export const SocialMediaContainer = styled.div`
   }
 `;
 
+export const PersonalImage = styled.img`
+  margin-top: 32px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+    1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+    2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+`;
+
 export const PersonalInfoGrid = styled.div`
   margin-top: 32px;
   display: grid;
