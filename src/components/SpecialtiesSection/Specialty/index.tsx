@@ -13,7 +13,7 @@ interface SpecialtyProps {
 
 export const Specialty = ({ Icon, description, title }: SpecialtyProps) => {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <SpecialtyIConContainer>
         <Icon />
       </SpecialtyIConContainer>

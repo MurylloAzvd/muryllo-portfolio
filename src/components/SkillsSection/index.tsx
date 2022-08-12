@@ -40,12 +40,12 @@ export const SkillsSection = () => {
 
   return (
     <Container id="skills">
-      <h1>Skills</h1>
+      <h1 data-aos="fade-right">Skills</h1>
       <SliderContainer>
         <Slider {...settings}>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/html.svg" alt="html" />
               </Card>
               <span>HTML</span>
@@ -53,7 +53,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/css.svg" alt="css" />
               </Card>
               <span>CSS</span>
@@ -61,7 +61,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/javascript.svg" alt="javascript" />
               </Card>
               <span>JavaScript</span>
@@ -69,7 +69,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/typescript.svg" alt="typescript" />
               </Card>
 
@@ -78,7 +78,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/react.svg" alt="react" />
               </Card>
               <span>React</span>
@@ -86,7 +86,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/react-native.svg" alt="react-native" />
               </Card>
               <span>React Native</span>
@@ -94,7 +94,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/next-js.svg" alt="next-js" />
               </Card>
               <span>Next.js</span>
@@ -102,7 +102,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img
                   src="/skills-logos/styled-components.svg"
                   alt="styled-components"
@@ -113,7 +113,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/sass.svg" alt="sass" />
               </Card>
               <span>Sass</span>
@@ -121,7 +121,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/tailwind-css.svg" alt="tailwind-css" />
               </Card>
               <span>Tailwind CSS</span>
@@ -129,7 +129,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/linux.svg" alt="linux" />
               </Card>
               <span>Linux</span>
@@ -137,7 +137,7 @@ export const SkillsSection = () => {
           </div>
           <div>
             <SkillContainer>
-              <Card>
+              <Card data-aos="zoom-in-up">
                 <img src="/skills-logos/git.svg" alt="git" />
               </Card>
               <span>Git</span>

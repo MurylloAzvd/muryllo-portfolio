@@ -37,14 +37,14 @@ export const ContactSection = () => {
 
   return (
     <Container id="contact">
-      <h1>Contact</h1>
+      <h1 data-aos="fade-right">Contact</h1>
       <FormContainer
         onSubmit={(event) => {
           event.preventDefault();
           handleSubmit();
         }}
       >
-        <span>Feel free to send me an email</span>
+        <span data-aos="fade-left">Feel free to send me an email</span>
         <input
           type="text"
           name="name"

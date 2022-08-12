@@ -8,7 +8,7 @@ import {
 export const Cover = () => {
   return (
     <Container>
-      <PresentationContainer>
+      <PresentationContainer data-aos="fade-up">
         <TypeWriterEffectContainer>
           <h2>Front-End Developer</h2>
         </TypeWriterEffectContainer>

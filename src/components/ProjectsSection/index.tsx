@@ -4,7 +4,7 @@ import { Container, ProjectsContainer } from "./styles";
 export const ProjectsSection = () => {
   return (
     <Container id="projects">
-      <h1>Projects</h1>
+      <h1 data-aos="fade-right">Projects</h1>
       <ProjectsContainer>
         <ProjectCard
           title="Fretec Entregas"

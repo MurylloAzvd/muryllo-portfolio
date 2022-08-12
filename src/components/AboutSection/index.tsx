@@ -23,10 +23,10 @@ import {
 export const AboutSection = () => {
   return (
     <Container id="about">
-      <h1>About</h1>
-      <ProfileImage src="/profile.png" alt="avatar" />
-      <ProfileName>Muryllo</ProfileName>
-      <SocialMediaContainer>
+      <h1 data-aos="fade-right">About</h1>
+      <ProfileImage data-aos="zoom-in" src="/profile.png" alt="avatar" />
+      <ProfileName data-aos="fade-up">Muryllo</ProfileName>
+      <SocialMediaContainer data-aos="fade-up">
         <SocialMediaLink
           href="https://www.linkedin.com/in/muryllodev"
           Icon={FaLinkedin}
@@ -40,12 +40,12 @@ export const AboutSection = () => {
           Icon={FaWhatsapp}
         />
       </SocialMediaContainer>
-      <AboutText>
+      <AboutText data-aos="fade-up">
         Passionate about <span>technology</span>. What inspires me is knowing
         that I can help create systems that can be used by thousands of people
         around the world.
       </AboutText>
-      <AboutText>
+      <AboutText data-aos="fade-up">
         Currently working as a <span>Front-end</span> developer, developing{" "}
         <span>web</span> and <span>mobile</span> applications. Using as a tool,
         technologies such as:{" "}

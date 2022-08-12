@@ -8,7 +8,7 @@ interface PersonalInfoProps {
 
 export const PersonalInfo = ({ Icon, info }: PersonalInfoProps) => {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <Icon />
       <span>{info}</span>
     </Container>

@@ -13,7 +13,7 @@ import { Container } from "./styles";
 export const SpecialtiesSection = () => {
   return (
     <Container id="specialties">
-      <h1>Specialties</h1>
+      <h1 data-aos="fade-right">Specialties</h1>
 
       <Specialty
         title="UX Design"

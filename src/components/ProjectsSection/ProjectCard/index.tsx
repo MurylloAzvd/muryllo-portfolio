@@ -24,7 +24,7 @@ export const ProjectCard = ({
   pageLink,
 }: ProjectCardProps) => {
   return (
-    <Container>
+    <Container data-aos="zoom-in">
       <InnerCard>
         <FrontCard>
           <img src={logo} alt={title} />
