@@ -4,7 +4,6 @@ fixes
 -translate
 
 -scrollbar
--song
 -seo
 
 -clean up
