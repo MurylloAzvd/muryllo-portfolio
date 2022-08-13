@@ -44,7 +44,9 @@ export const ContactSection = () => {
           handleSubmit();
         }}
       >
-        <span data-aos="fade-left">Feel free to send me an email</span>
+        <span data-aos="fade-right" data-aos-delay={100}>
+          Feel free to send me an email
+        </span>
         <input
           type="text"
           name="name"
