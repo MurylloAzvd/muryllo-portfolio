@@ -1,5 +1,3 @@
--desktop
-
 -translate
 
 -scrollbar
