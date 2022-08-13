@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 32px 64px;
+  padding: 32px;
   background-color: #000;
   color: #fff;
 
