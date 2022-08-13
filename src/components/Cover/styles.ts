@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   padding: 32px;
 
   &::before {

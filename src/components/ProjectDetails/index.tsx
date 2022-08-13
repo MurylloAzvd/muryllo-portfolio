@@ -1,7 +1,7 @@
 import { Header } from "./Header";
 import { ImagesSlider } from "./ImagesSlider";
 import { Info } from "./Info";
-import { Container } from "./styles";
+import { Container, ContentWrapper } from "./styles";
 
 interface ProjectDetailsProps {
   title: string;
@@ -19,8 +19,10 @@ export const ProjectDetails = ({
   return (
     <Container>
       <Header projectTitle={title} />
-      <ImagesSlider images={images} />
-      <Info description={description} link={link} title={title} />
+      <ContentWrapper>
+        <ImagesSlider images={images} />
+        <Info description={description} link={link} title={title} />
+      </ContentWrapper>
     </Container>
   );
 };

@@ -13,10 +13,11 @@ export const Container = styled.section`
 `;
 
 export const FormContainer = styled.form`
-  margin-top: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 520px;
+  margin: 32px auto 0;
 
   span {
     font-size: 20px;

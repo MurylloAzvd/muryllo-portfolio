@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 400px;
   width: 100%;
   max-width: 360px;
+  margin: 32px;
 
   perspective: 1000px;
 
@@ -14,10 +15,6 @@ export const Container = styled.div`
     & > div {
       transform: rotateY(180deg);
     }
-  }
-
-  & + & {
-    margin-top: 32px;
   }
 `;
 

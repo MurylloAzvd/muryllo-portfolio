@@ -10,8 +10,8 @@ export const Header = ({ projectTitle }: HeaderProps) => {
     <Container>
       <h1>Project Details</h1>
       <TabsBarContainer>
-        <Link href="/" passHref>
-          <TabBar>Home</TabBar>
+        <Link href="/#projects" passHref>
+          <TabBar>Projects</TabBar>
         </Link>
         <DividerTabs>/</DividerTabs>
         <TabBar selected>{projectTitle}</TabBar>

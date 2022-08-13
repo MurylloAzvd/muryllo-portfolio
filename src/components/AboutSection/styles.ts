@@ -20,9 +20,14 @@ export const AboutText = styled.p`
   line-height: 24px;
   font-weight: 200;
   margin-top: 12px;
+  max-width: 740px;
 
   span {
     font-weight: bold;
+  }
+
+  @media (min-width: 740px) {
+    text-align: center;
   }
 `;
 

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 40px;
   color: #fff;
   padding: 16px;
+  max-width: 520px;
+  margin: 40px auto 0;
 
   h1 {
     font-size: 32px;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding: 32px;
+  padding: 16px;
   background-color: #000;
   color: #fff;
 
@@ -10,4 +10,10 @@ export const Container = styled.section`
     text-transform: uppercase;
     text-align: center;
   }
+`;
+
+export const SpecialtiesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
