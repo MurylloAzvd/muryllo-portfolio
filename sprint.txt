@@ -1,3 +1,8 @@
+fixes
+-specialties
+-animation delay
+-phone validation
+
 -translate
 
 -scrollbar
