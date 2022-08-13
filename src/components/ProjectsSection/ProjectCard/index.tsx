@@ -14,6 +14,7 @@ interface ProjectCardProps {
   logo: string;
   technologies: string[];
   pageLink: string;
+  index: number;
 }
 
 export const ProjectCard = ({
@@ -22,9 +23,10 @@ export const ProjectCard = ({
   technologies,
   title,
   pageLink,
+  index,
 }: ProjectCardProps) => {
   return (
-    <Container data-aos="zoom-in">
+    <Container data-aos="zoom-in" data-aos-delay={(index + 1) * 100}>
       <InnerCard>
         <FrontCard>
           <img src={logo} alt={title} />

@@ -59,15 +59,17 @@ export const AboutSection = () => {
       </AboutText>
 
       <PersonalInfoGrid>
-        <PersonalInfo Icon={FaHome} info="Natal - RN, Brazil" />
-        <PersonalInfo Icon={FaBirthdayCake} info="Since 1998" />
+        <PersonalInfo Icon={FaHome} info="Natal - RN, Brazil" index={0} />
+        <PersonalInfo Icon={FaBirthdayCake} info="Since 1998" index={1} />
         <PersonalInfo
           Icon={FaUniversity}
           info="Information Technology - IMD/UFRN"
+          index={2}
         />
         <PersonalInfo
           Icon={FaLanguage}
           info="Portuguese (Native) | English (Intermediate)"
+          index={3}
         />
       </PersonalInfoGrid>
     </Container>

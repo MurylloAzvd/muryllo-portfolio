@@ -20,6 +20,7 @@ export const ProjectsSection = () => {
             "Firabase",
           ]}
           pageLink="/fretec"
+          index={0}
         />
         <ProjectCard
           title="Desopila App"
@@ -27,6 +28,7 @@ export const ProjectsSection = () => {
           logo="/projects/desopila/logo.png"
           technologies={["React Native", "Context API"]}
           pageLink="/desopila"
+          index={1}
         />
         <ProjectCard
           title="Resolve Tudo"
@@ -40,6 +42,7 @@ export const ProjectsSection = () => {
             "Context API",
           ]}
           pageLink="/resolve-tudo"
+          index={2}
         />
         <ProjectCard
           title="Cardiometrics"
@@ -55,6 +58,7 @@ export const ProjectsSection = () => {
             "Context API",
           ]}
           pageLink="/cardiometrics"
+          index={3}
         />
         <ProjectCard
           title="Confia.shop"
@@ -67,6 +71,7 @@ export const ProjectsSection = () => {
             "Context API",
           ]}
           pageLink="/confia-shop"
+          index={4}
         />
       </ProjectsContainer>
     </Container>
