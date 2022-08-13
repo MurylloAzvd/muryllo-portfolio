@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const Container = styled.section`
   padding: 32px;
   background-color: #000;
+  min-height: calc(100vh - 82px);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   h1 {
     font-size: 28px;
@@ -18,6 +22,7 @@ export const FormContainer = styled.form`
   align-items: center;
   max-width: 520px;
   margin: 32px auto 0;
+  width: 100%;
 
   span {
     font-size: 20px;
