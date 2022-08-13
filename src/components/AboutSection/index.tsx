@@ -53,8 +53,7 @@ export const AboutSection = () => {
         ecosystem. In addition to other technologies that help in the
         development and integration of applications:{" "}
         <span>
-          Git, Gitlab, VSCode, Postman, Figma, Clickup, Styled-Components,
-          Next.js, Formik
+          Git, Gitlab, VSCode, Postman, Figma, Styled-Components, Next.js
         </span>
         .
       </AboutText>

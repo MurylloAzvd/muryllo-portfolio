@@ -4,6 +4,9 @@ import {
   BsSearch,
   BsArrowsAngleExpand,
   BsArrowRepeat,
+  BsCodeSlash,
+  BsLightning,
+  BsLightbulb,
 } from "react-icons/bs";
 
 import { Specialty } from "./Specialty";
@@ -49,6 +52,24 @@ export const SpecialtiesSection = () => {
           title="SPA"
           description="A SPA (single-page application) is an app that doesn’t need to reload the page during its use and works within a browser. The main advantage of single-page applications is its speed."
           Icon={BsArrowRepeat}
+        />
+
+        <Specialty
+          title="Clean Code"
+          description="Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way."
+          Icon={BsCodeSlash}
+        />
+
+        <Specialty
+          title="SCRUM"
+          description="Scrum helps people and teams deliver value incrementally in a collaborative manner. If you are just getting started, think of it as a way to get work done as a team in small pieces at a time, with experimentation and feedback loops along the way."
+          Icon={BsLightning}
+        />
+
+        <Specialty
+          title="MVP"
+          description="A minimum viable product is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development."
+          Icon={BsLightbulb}
         />
       </SpecialtiesWrapper>
     </Container>

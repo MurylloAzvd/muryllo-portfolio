@@ -1,5 +1,4 @@
 fixes
--specialties
 -animation delay
 -phone validation
 
