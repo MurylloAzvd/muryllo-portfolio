@@ -21,10 +21,7 @@ export default function contact(req: NextApiRequest, res: NextApiResponse) {
     html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`,
   };
 
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
+  transporter.sendMail(mailData);
 
   res.send("success");
 }
