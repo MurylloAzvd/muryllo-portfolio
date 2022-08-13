@@ -6,7 +6,6 @@ export const Container = styled.div`
   width: 100%;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -26,6 +25,10 @@ export const Container = styled.div`
     top: 0;
     height: 100vh;
     width: 100%;
+  }
+
+  @media (min-width: 500px) {
+    background-attachment: fixed;
   }
 `;
 
