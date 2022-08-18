@@ -1,3 +1,4 @@
+import useTranslation from "next-translate/useTranslation";
 import {
   Container,
   DownloadResume,
@@ -6,6 +7,8 @@ import {
 } from "./styles";
 
 export const Cover = () => {
+  const { t } = useTranslation("home");
+
   return (
     <Container>
       <PresentationContainer data-aos="fade-up">
@@ -18,7 +21,7 @@ export const Cover = () => {
           download
           target="_blank"
         >
-          Download Resume
+          {t("download-resume")}
         </DownloadResume>
       </PresentationContainer>
     </Container>

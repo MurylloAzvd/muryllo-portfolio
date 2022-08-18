@@ -1,0 +1,18 @@
+{
+  "section-title": {
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "specialties": "Especialidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+},
+  "project-description": {
+      "fretec": "A Fretec Entregas é um aplicativo para entregadores autônomos que desejam realizar fretes na cidade de Natal/RN. O aplicativo oferece ao entregador uma rota inteligente previamente calculada.",
+      "desopila": "App focado em publicidade de locações para locação, como: chácaras, pousadas, lanchas. Conectando proprietários de ambiente com usuários em potencial.",
+      "resolve-tudo": "App para encontrar qualquer tipo de prestador de serviço de forma rápida e fácil.",
+      "cardiometrics": "Cardiologistas de diversas especialidades que visam formar uma equipe de opinião médica, com integração multidisciplinar como forma de promover conhecimento e assistência em cardiologia.",
+      "confia-shop": "Confia.shop é uma plataforma de venda de produtos através de um menu digital. A ideia é que os clientes possam escolher e pagar pelos seus produtos sem a necessidade de um vendedor próximo."
+  },
+  "project-details": "Detalhes do Projeto"
+}

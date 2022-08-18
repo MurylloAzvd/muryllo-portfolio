@@ -1,9 +1,12 @@
 import Slider from "react-slick";
+import useTranslation from "next-translate/useTranslation";
 import { Card, Container, SkillContainer, SliderContainer } from "./styles";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const SkillsSection = () => {
+  const { t } = useTranslation("common");
+
   const settings = {
     dots: false,
     infinite: true,
@@ -40,7 +43,7 @@ export const SkillsSection = () => {
 
   return (
     <Container id="skills">
-      <h1 data-aos="fade-right">Skills</h1>
+      <h1 data-aos="fade-right">{t("section-title.skills")}</h1>
       <SliderContainer>
         <Slider {...settings}>
           <div>

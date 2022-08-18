@@ -1,10 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../components/ProjectDetails";
 
 export default function ConfiaShop() {
+  const { t } = useTranslation("common");
+
   return (
     <ProjectDetails
       title="Confia.shop"
-      description="Confia.shop is a platform for selling products through a digital menu. The idea is that customers can choose and pay for your products without the need for a salesperson nearby."
+      description={t("project-description.confia-shop")}
       images={[
         "/projects/confia-shop/confia1.jpeg",
         "/projects/confia-shop/confia2.jpeg",

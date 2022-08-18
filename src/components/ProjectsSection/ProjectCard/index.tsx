@@ -1,4 +1,5 @@
 import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
 import {
   Container,
   BackCard,
@@ -25,6 +26,8 @@ export const ProjectCard = ({
   pageLink,
   index,
 }: ProjectCardProps) => {
+  const { t } = useTranslation("home");
+
   return (
     <Container data-aos="zoom-in" data-aos-delay={(index + 1) * 100}>
       <InnerCard>
@@ -41,7 +44,7 @@ export const ProjectCard = ({
             ))}
           </TechnologiesContainer>
           <Link href={pageLink} passHref>
-            <button>See more</button>
+            <button>{t("see-more")}</button>
           </Link>
         </BackCard>
       </InnerCard>

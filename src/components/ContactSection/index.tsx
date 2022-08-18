@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Loading } from "../Loading";
 import { Container, FormContainer, ThankYouText } from "./styles";
+import useTranslation from "next-translate/useTranslation";
 
 export const ContactSection = () => {
   const [isSent, setIsSent] = useState(false);
@@ -11,6 +12,8 @@ export const ContactSection = () => {
     email: "",
     message: "",
   });
+
+  const { t } = useTranslation();
 
   const emailValidator = (email: string) => {
     const regex = /\S+@\S+\.\S+/;
@@ -37,7 +40,7 @@ export const ContactSection = () => {
 
   return (
     <Container id="contact">
-      <h1 data-aos="fade-right">Contact</h1>
+      <h1 data-aos="fade-right">{t("common:section-title.contact")}</h1>
       <FormContainer
         onSubmit={(event) => {
           event.preventDefault();
@@ -45,12 +48,12 @@ export const ContactSection = () => {
         }}
       >
         <span data-aos="fade-right" data-aos-delay={100}>
-          Feel free to send me an email
+          {t("home:contact-form.title")}
         </span>
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder={t("home:contact-form.name")}
           value={contact.name}
           onChange={(event) =>
             setContact((prevState) => ({
@@ -73,7 +76,7 @@ export const ContactSection = () => {
         />
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder={t("home:contact-form.message")}
           rows={3}
           value={contact.message}
           onChange={(event) =>
@@ -85,11 +88,13 @@ export const ContactSection = () => {
         />
         {!isLoading && !isSent && (
           <button type="submit" disabled={!isFormEnabled}>
-            Send
+            {t("home:contact-form.send")}
           </button>
         )}
         {isLoading && <Loading />}
-        {isSent && <ThankYouText>{"Thanks for sending 😉✅"}</ThankYouText>}
+        {isSent && (
+          <ThankYouText>{t("home:contact-form.thank-you")}</ThankYouText>
+        )}
       </FormContainer>
     </Container>
   );

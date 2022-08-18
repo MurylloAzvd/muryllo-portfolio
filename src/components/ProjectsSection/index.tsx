@@ -1,16 +1,17 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectCard } from "./ProjectCard";
 import { Container, ProjectsContainer } from "./styles";
 
 export const ProjectsSection = () => {
+  const { t } = useTranslation("common");
+
   return (
     <Container id="projects">
-      <h1 data-aos="fade-right">Projects</h1>
+      <h1 data-aos="fade-right">{t("section-title.projects")}</h1>
       <ProjectsContainer>
         <ProjectCard
           title="Fretec Entregas"
-          description="The Fretec Entregas is an application for independent couriers who
-          want to carry out freight in the city of Natal/RN. The app gives the
-          delivery person a previously calculated smart route."
+          description={t("project-description.fretec")}
           logo="/projects/fretec/logo.png"
           technologies={[
             "React",
@@ -24,7 +25,7 @@ export const ProjectsSection = () => {
         />
         <ProjectCard
           title="Desopila App"
-          description="App focused on location advertising for lease, such as: farms, inns, speedboats. Connecting Environment Owners with potential users."
+          description={t("project-description.desopila")}
           logo="/projects/desopila/logo.png"
           technologies={["React Native", "Context API"]}
           pageLink="/desopila"
@@ -32,7 +33,7 @@ export const ProjectsSection = () => {
         />
         <ProjectCard
           title="Resolve Tudo"
-          description="App to find any type of service provider quickly and easily."
+          description={t("project-description.resolve-tudo")}
           logo="/projects/resolve-tudo/logo.webp"
           technologies={[
             "React",
@@ -46,7 +47,7 @@ export const ProjectsSection = () => {
         />
         <ProjectCard
           title="Cardiometrics"
-          description="Cardiologists with different specialties who aim to form a medical opinion team, with multidisciplinary integration as a way of promoting knowledge and assistance in cardiology."
+          description={t("project-description.cardiometrics")}
           logo="/projects/cardiometrics/logo.jpg"
           technologies={[
             "React",
@@ -62,7 +63,7 @@ export const ProjectsSection = () => {
         />
         <ProjectCard
           title="Confia.shop"
-          description="Confia.shop is a platform for selling products through a digital menu. The idea is that customers can choose and pay for your products without the need for a salesperson nearby."
+          description={t("project-description.confia-shop")}
           logo="/projects/confia-shop/logo.png"
           technologies={[
             "React",

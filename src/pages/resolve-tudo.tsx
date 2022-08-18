@@ -1,10 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../components/ProjectDetails";
 
 export default function ResolveTudo() {
+  const { t } = useTranslation("common");
+
   return (
     <ProjectDetails
       title="Resolve Tudo"
-      description="App to find any type of service provider quickly and easily."
+      description={t("project-description.resolve-tudo")}
       images={[
         "/projects/resolve-tudo/resolve1.webp",
         "/projects/resolve-tudo/resolve2.webp",

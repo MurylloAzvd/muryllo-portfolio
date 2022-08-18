@@ -1,12 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../components/ProjectDetails";
 
 export default function Fretec() {
+  const { t } = useTranslation("common");
+
   return (
     <ProjectDetails
       title="Fretec Entregas"
-      description="The Fretec Entregas is an application for independent couriers who
-      want to carry out freight in the city of Natal/RN. The app gives the
-      delivery person a previously calculated smart route."
+      description={t("project-description.fretec")}
       link="https://play.google.com/store/apps/details?id=com.fretecentregas"
       images={[
         "/projects/fretec/fretec1.png",

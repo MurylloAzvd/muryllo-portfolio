@@ -1,10 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../components/ProjectDetails";
 
 export default function Desopila() {
+  const { t } = useTranslation("common");
+
   return (
     <ProjectDetails
       title="Desopila App"
-      description="App focused on location advertising for lease, such as: farms, inns, speedboats. Connecting Environment Owners with potential users. (Interrupted)"
+      description={t("project-description.desopila")}
       images={[
         "/projects/desopila/desopila1.jpeg",
         "/projects/desopila/desopila2.jpeg",

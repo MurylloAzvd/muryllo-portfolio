@@ -1,10 +1,13 @@
+import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../components/ProjectDetails";
 
 export default function Cardiometrics() {
+  const { t } = useTranslation("common");
+
   return (
     <ProjectDetails
       title="Cardiometrics"
-      description="Cardiologists with different specialties who aim to form a medical opinion team, with multidisciplinary integration as a way of promoting knowledge and assistance in cardiology. (development)"
+      description={t("project-description.cardiometrics")}
       images={[
         "/projects/cardiometrics/cardiometrics6.png",
         "/projects/cardiometrics/cardiometrics3.png",
