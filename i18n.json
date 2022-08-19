@@ -1,9 +1,9 @@
 {
-    "locales": ["en", "pt-BR"],
-    "defaultLocale": "en",
-    "localeDetection": false,
-    "pages": {
-      "*": ["common"],
-      "/": ["home"]
-    }
+  "locales": ["en", "pt-BR"],
+  "defaultLocale": "en",
+  "localeDetection": true,
+  "pages": {
+    "*": ["common"],
+    "/": ["home"]
   }
+}

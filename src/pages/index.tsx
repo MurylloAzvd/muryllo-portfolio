@@ -4,10 +4,12 @@ import { SkillsSection } from "../components/SkillsSection";
 import { ContactSection } from "../components/ContactSection";
 import { SpecialtiesSection } from "../components/SpecialtiesSection";
 import { ProjectsSection } from "../components/ProjectsSection";
+import { LanguageMenu } from "../components/LanguageMenu";
 
 export default function Home() {
   return (
     <>
+      <LanguageMenu />
       <Cover />
       <AboutSection />
       <SkillsSection />
