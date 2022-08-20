@@ -37,7 +37,6 @@ export const LanguageMenu = () => {
   const currentLanguage = languages[lang];
 
   const selectLanguage = (language: Language) => {
-    setIsOpen(false);
     router.push("/", "/", { locale: language });
   };
 
