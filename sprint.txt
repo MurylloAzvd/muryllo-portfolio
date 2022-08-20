@@ -1,4 +1,4 @@
--seo
+-page-background
 
 -clean up
 -domain
