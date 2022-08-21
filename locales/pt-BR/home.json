@@ -27,5 +27,6 @@
     "message": "Mensagem",
     "send": "Enviar",
     "thank-you": "Obrigado por enviar 😉✅"
-  }
+  },
+  "email-error": "Houve um erro ao enviar a mensagem, por favor, tente novamente."
 }

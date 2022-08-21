@@ -36,6 +36,7 @@ export const ContactSection = () => {
       setIsSent(true);
     } catch (error) {
       console.log(error);
+      alert(t("home:email-error"));
     }
     setIsLoading(false);
     setContact({ email: "", message: "", name: "" });

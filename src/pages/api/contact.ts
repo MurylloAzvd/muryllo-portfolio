@@ -1,8 +1,10 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import nodemailer from "nodemailer";
 
-export default function contact(req: NextApiRequest, res: NextApiResponse) {
-  const nodemailer = require("nodemailer");
-
+export default async function contact(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
@@ -21,7 +23,11 @@ export default function contact(req: NextApiRequest, res: NextApiResponse) {
     html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`,
   };
 
-  transporter.sendMail(mailData);
+  try {
+    await transporter.sendMail(mailData);
+  } catch (error) {
+    return res.status(500).json({ error: error.message || error.toString() });
+  }
 
-  res.send("success");
+  return res.status(200).send("sucess");
 }
