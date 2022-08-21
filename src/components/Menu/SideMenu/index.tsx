@@ -9,38 +9,45 @@ interface SideMenuProps {
 
 export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
   const { t } = useTranslation("common");
+
+  const links = [
+    {
+      href: "/#",
+      label: t("section-title.home"),
+    },
+    {
+      href: "/#about",
+      label: t("section-title.about"),
+    },
+    {
+      href: "/#skills",
+      label: t("section-title.skills"),
+    },
+    {
+      href: "/#specialties",
+      label: t("section-title.specialties"),
+    },
+    {
+      href: "/#projects",
+      label: t("section-title.projects"),
+    },
+    {
+      href: "/#contact",
+      label: t("section-title.contact"),
+    },
+  ];
+
   return (
     <Container isOpen={isOpen}>
-      <li className="underline-effect">
-        <Link href="/#" passHref>
-          <a onClick={closeMenu}>{t("section-title.home")}</a>
-        </Link>
-      </li>
-      <li className="underline-effect">
-        <Link href="/#about" passHref>
-          <a onClick={closeMenu}>{t("section-title.about")}</a>
-        </Link>
-      </li>
-      <li className="underline-effect">
-        <Link href="/#skills" passHref>
-          <a onClick={closeMenu}>{t("section-title.skills")}</a>
-        </Link>
-      </li>
-      <li className="underline-effect">
-        <Link href="/#specialties" passHref>
-          <a onClick={closeMenu}>{t("section-title.specialties")}</a>
-        </Link>
-      </li>
-      <li className="underline-effect">
-        <Link href="/#projects" passHref>
-          <a onClick={closeMenu}>{t("section-title.projects")}</a>
-        </Link>
-      </li>
-      <li className="underline-effect">
-        <Link href="/#contact" passHref>
-          <a onClick={closeMenu}>{t("section-title.contact")}</a>
-        </Link>
-      </li>
+      <ul>
+        {links.map(({ href, label }, index) => (
+          <li key={index} className="underline-effect">
+            <Link href={href} passHref>
+              <a onClick={closeMenu}>{label}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </Container>
   );
 };

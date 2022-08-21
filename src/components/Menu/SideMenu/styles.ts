@@ -4,7 +4,7 @@ interface ContainerProps {
   isOpen: boolean;
 }
 
-export const Container = styled.ul<ContainerProps>`
+export const Container = styled.nav<ContainerProps>`
   background-color: #000;
   position: fixed;
   top: 0;
@@ -15,10 +15,13 @@ export const Container = styled.ul<ContainerProps>`
   transform: translateX(100%);
   transition: transform 0.5s ease-out;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
 
   li {
     font-size: 28px;

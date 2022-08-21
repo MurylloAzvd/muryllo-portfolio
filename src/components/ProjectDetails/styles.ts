@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled.main`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
