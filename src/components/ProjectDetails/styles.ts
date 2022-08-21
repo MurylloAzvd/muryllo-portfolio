@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #000;
   min-height: calc(100vh - 82px);
   display: flex;
   flex-direction: column;

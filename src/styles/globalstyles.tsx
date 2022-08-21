@@ -9,7 +9,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #000;
+    color: #fff;
   }
 
   a {
@@ -86,6 +91,46 @@ const GlobalStyle = createGlobalStyle`
 
   .slick-dots {
     position: relative;
+  }
+
+  .shadow-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: rgba(0, 255, 255, 0.7);
+    cursor: pointer;
+    border: 1px solid rgb(0, 255, 255, 0.7);
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 0px 1px 2px 0px rgba(0, 255, 255, 0.7),
+        1px 2px 4px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 8px 0px rgba(0, 255, 255, 0.7),
+        2px 4px 16px 0px rgba(0, 255, 255, 0.7);
+      transform: translateX(-2.5px);
+      transition-duration: 0.3s;
+    }
+  }
+
+  .underline-effect {
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 2px solid #fff;
+      height: 2px;
+      margin-top: 4px;
+      width: 100%;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      border-radius: 4px;
+    }
+
+    &:hover::after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
   }
 `;
 
