@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import axios from "axios";
-import { Loading } from "../../Loading";
-import { Container, FormContainer, ThankYouText } from "./styles";
 import useTranslation from "next-translate/useTranslation";
+
 import { SectionTitle } from "../../SectionTitle";
+import { Loading } from "../../Loading";
+
+import { Container, FormContainer, ThankYouText } from "./styles";
 
 export const ContactSection = () => {
   const [isSent, setIsSent] = useState(false);
@@ -39,6 +41,14 @@ export const ContactSection = () => {
     setContact({ email: "", message: "", name: "" });
   };
 
+  const handleInputChange = (
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) =>
+    setContact((prevState) => ({
+      ...prevState,
+      [event.target.name]: event.target.value,
+    }));
+
   return (
     <Container id="contact">
       <SectionTitle>{t("common:section-title.contact")}</SectionTitle>
@@ -56,36 +66,21 @@ export const ContactSection = () => {
           name="name"
           placeholder={t("home:contact-form.name")}
           value={contact.name}
-          onChange={(event) =>
-            setContact((prevState) => ({
-              ...prevState,
-              name: event.target.value,
-            }))
-          }
+          onChange={handleInputChange}
         />
         <input
           type="email"
           name="email"
           placeholder="E-mail"
           value={contact.email}
-          onChange={(event) =>
-            setContact((prevState) => ({
-              ...prevState,
-              email: event.target.value,
-            }))
-          }
+          onChange={handleInputChange}
         />
         <textarea
           name="message"
           placeholder={t("home:contact-form.message")}
           rows={3}
           value={contact.message}
-          onChange={(event) =>
-            setContact((prevState) => ({
-              ...prevState,
-              message: event.target.value,
-            }))
-          }
+          onChange={handleInputChange}
         />
         {!isLoading && !isSent && (
           <button type="submit" disabled={!isFormEnabled}>

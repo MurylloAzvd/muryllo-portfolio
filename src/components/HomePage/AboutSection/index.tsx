@@ -27,24 +27,49 @@ import {
 export const AboutSection = () => {
   const { t } = useTranslation();
 
+  const socialMedia = [
+    {
+      href: "https://www.linkedin.com/in/muryllodev",
+      icon: FaLinkedin,
+    },
+    {
+      href: "https://github.com/MurylloAzvd",
+      icon: FaGithub,
+    },
+    {
+      href: "https://api.whatsapp.com/send?phone=5584988784881",
+      icon: FaWhatsapp,
+    },
+  ];
+
+  const personalInfo = [
+    {
+      icon: FaHome,
+      info: t("home:personal-info.address"),
+    },
+    {
+      icon: FaBirthdayCake,
+      info: t("home:personal-info.birthday"),
+    },
+    {
+      icon: FaUniversity,
+      info: t("home:personal-info.education"),
+    },
+    {
+      icon: FaLanguage,
+      info: t("home:personal-info.language"),
+    },
+  ];
+
   return (
     <Container id="about">
       <SectionTitle>{t("common:section-title.about")}</SectionTitle>
       <ProfileImage data-aos="zoom-in" src="/profile.png" alt="avatar" />
       <ProfileName data-aos="fade-up">Muryllo</ProfileName>
       <SocialMediaContainer data-aos="fade-up">
-        <SocialMediaLink
-          href="https://www.linkedin.com/in/muryllodev"
-          Icon={FaLinkedin}
-        />
-        <SocialMediaLink
-          href="https://github.com/MurylloAzvd"
-          Icon={FaGithub}
-        />
-        <SocialMediaLink
-          href="https://api.whatsapp.com/send?phone=5584988784881"
-          Icon={FaWhatsapp}
-        />
+        {socialMedia.map(({ href, icon }, index) => (
+          <SocialMediaLink key={index} Icon={icon} href={href} />
+        ))}
       </SocialMediaContainer>
       <AboutText data-aos="fade-up">
         <Trans
@@ -60,26 +85,9 @@ export const AboutSection = () => {
       </AboutText>
 
       <PersonalInfoGrid>
-        <PersonalInfo
-          Icon={FaHome}
-          info={t("home:personal-info.address")}
-          index={0}
-        />
-        <PersonalInfo
-          Icon={FaBirthdayCake}
-          info={t("home:personal-info.birthday")}
-          index={1}
-        />
-        <PersonalInfo
-          Icon={FaUniversity}
-          info={t("home:personal-info.education")}
-          index={2}
-        />
-        <PersonalInfo
-          Icon={FaLanguage}
-          info={t("home:personal-info.language")}
-          index={3}
-        />
+        {personalInfo.map(({ icon, info }, index) => (
+          <PersonalInfo key={index} Icon={icon} info={info} index={index} />
+        ))}
       </PersonalInfoGrid>
     </Container>
   );

@@ -21,8 +21,8 @@ export const ImagesSlider = ({ images }: ImagesSliderProps) => {
   return (
     <Container>
       <Slider {...settings}>
-        {images.map((image) => (
-          <img key={image} src={image} alt="project" />
+        {images.map((image, index) => (
+          <img key={index} src={image} alt="project" />
         ))}
       </Slider>
     </Container>

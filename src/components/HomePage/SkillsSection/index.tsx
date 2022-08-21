@@ -3,9 +3,10 @@ import useTranslation from "next-translate/useTranslation";
 
 import { SectionTitle } from "../../SectionTitle";
 
-import { Card, Container, SkillContainer, SliderContainer } from "./styles";
+import { Container, SliderContainer } from "./styles";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Skill } from "./Skill";
 
 export const SkillsSection = () => {
   const { t } = useTranslation("common");
@@ -44,111 +45,65 @@ export const SkillsSection = () => {
     ],
   };
 
+  const skills = [
+    {
+      label: "HTML",
+      imgSrc: "/skills/html.svg",
+    },
+    {
+      label: "CSS",
+      imgSrc: "/skills/css.svg",
+    },
+    {
+      label: "JavaScript",
+      imgSrc: "/skills/javascript.svg",
+    },
+    {
+      label: "TypeScript",
+      imgSrc: "/skills/typescript.svg",
+    },
+    {
+      label: "React",
+      imgSrc: "/skills/react.svg",
+    },
+    {
+      label: "React Native",
+      imgSrc: "/skills/react-native.svg",
+    },
+    {
+      label: "Next.js",
+      imgSrc: "/skills/next-js.svg",
+    },
+    {
+      label: "Styled Components",
+      imgSrc: "/skills/styled-components.svg",
+    },
+    {
+      label: "Sass",
+      imgSrc: "/skills/sass.svg",
+    },
+    {
+      label: "Tailwind CSS",
+      imgSrc: "/skills/tailwind-css.svg",
+    },
+    {
+      label: "Linux",
+      imgSrc: "/skills/linux.svg",
+    },
+    {
+      label: "Git",
+      imgSrc: "/skills/git.svg",
+    },
+  ];
+
   return (
     <Container id="skills">
       <SectionTitle>{t("section-title.skills")}</SectionTitle>
       <SliderContainer>
         <Slider {...settings}>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/html.svg" alt="html" />
-              </Card>
-              <span>HTML</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/css.svg" alt="css" />
-              </Card>
-              <span>CSS</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/javascript.svg" alt="javascript" />
-              </Card>
-              <span>JavaScript</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/typescript.svg" alt="typescript" />
-              </Card>
-
-              <span>TypeScript</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/react.svg" alt="react" />
-              </Card>
-              <span>React</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/react-native.svg" alt="react-native" />
-              </Card>
-              <span>React Native</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/next-js.svg" alt="next-js" />
-              </Card>
-              <span>Next.js</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img
-                  src="/skills/styled-components.svg"
-                  alt="styled-components"
-                />
-              </Card>
-              <span>Styled Components</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/sass.svg" alt="sass" />
-              </Card>
-              <span>Sass</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/tailwind-css.svg" alt="tailwind-css" />
-              </Card>
-              <span>Tailwind CSS</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/linux.svg" alt="linux" />
-              </Card>
-              <span>Linux</span>
-            </SkillContainer>
-          </div>
-          <div>
-            <SkillContainer>
-              <Card data-aos="zoom-in-up">
-                <img src="/skills/git.svg" alt="git" />
-              </Card>
-              <span>Git</span>
-            </SkillContainer>
-          </div>
+          {skills.map(({ imgSrc, label }, index) => (
+            <Skill key={index} imgSrc={imgSrc} label={label} />
+          ))}
         </Slider>
       </SliderContainer>
     </Container>
