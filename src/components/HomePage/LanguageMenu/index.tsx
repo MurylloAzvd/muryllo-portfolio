@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { MdExpandMore } from "react-icons/md";
 import useTranslation from "next-translate/useTranslation";
+import { Language } from "../../../enums";
 import { Container, LanguagesContainer, LanguageContainer } from "./styles";
 
 interface LanguageProps {
@@ -11,11 +12,6 @@ interface LanguageProps {
 
 interface LanguagesProps {
   [key: string]: LanguageProps;
-}
-
-enum Language {
-  EN = "en",
-  PT = "pt-BR",
 }
 
 const languages = {

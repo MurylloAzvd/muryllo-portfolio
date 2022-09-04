@@ -1,4 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
+import { Language } from "../../../enums";
 import {
   Container,
   PresentationContainer,
@@ -6,7 +7,7 @@ import {
 } from "./styles";
 
 export const Cover = () => {
-  const { t } = useTranslation("home");
+  const { t, lang } = useTranslation("home");
 
   return (
     <Container>
@@ -16,7 +17,7 @@ export const Cover = () => {
         </TypeWriterEffectContainer>
         <h1>{"< Muryllo />"}</h1>
         <a
-          href="http://www.africau.edu/images/default/sample.pdf"
+          href={`/resumes/resume-${lang === Language.EN ? "en" : "pt"}.pdf`}
           download
           target="_blank"
           rel="noreferrer"
