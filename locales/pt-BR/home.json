@@ -10,16 +10,6 @@
     "education": "TI - IMD/UFRN",
     "language": "Português (Nativo) | Inglês"
   },
-  "specialty-description": {
-    "ux-design": "UX design refere-se ao termo “design de experiência do usuário”, o principal papel do UX Design é se preocupar com cada etapa com a qual o usuário interage com o produto ou serviço; e fazer com que essa interação aconteça da forma mais tranquila possível.",
-    "ui-design": "UI significa “design de interface do usuário”. O UI Design é o principal responsável pela criação de interfaces funcionais, que permitem ao usuário navegar intuitivamente por toda a sua jornada.",
-    "seo": "SEO significa “otimização para mecanismos de busca”. Em termos simples, significa o processo de melhorar seu site para aumentar sua visibilidade quando as pessoas pesquisam produtos ou serviços relacionados ao seu negócio no Google, Bing e outros mecanismos de pesquisa.",
-    "responsive-web-design": "O web design responsivo é sobre a criação de páginas da web que ficam bem em todos os dispositivos. Um web design responsivo se ajustará automaticamente a diferentes tamanhos de tela e viewports.",
-    "spa": "Um SPA (aplicativo de página única) é um aplicativo que não precisa recarregar a página durante seu uso e funciona dentro de um navegador. A principal vantagem dos aplicativos de página única é sua velocidade.",
-    "clean-code": "Mesmo código ruim pode funcionar. Mas se o código não for limpo, ele pode trazer muitos prejuízos para qualquer empresa. Todos os anos, inúmeras horas e recursos significativos são perdidos devido ao código mal escrito. Mas não precisa ser assim.",
-    "scrum": "Scrum ajuda pessoas e equipes a entregar valor incrementalmente de forma colaborativa. Se você está apenas começando, pense nisso como uma maneira de fazer o trabalho em equipe em pequenos pedaços de cada vez, com experimentação e feedback ao longo do caminho.",
-    "mvp": "Um produto mínimo viável é uma versão de um produto com recursos suficientes para ser usado pelos primeiros clientes que podem fornecer feedback para o desenvolvimento futuro do produto."
-  },
   "see-more": "Ver mais",
   "contact-form": {
     "title": "Sinta-se à vontade para me enviar um e-mail",
