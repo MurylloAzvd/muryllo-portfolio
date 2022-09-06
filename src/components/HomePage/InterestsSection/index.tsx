@@ -12,14 +12,14 @@ import {
 
 import { SectionTitle } from "../../SectionTitle";
 
-import { Specialty } from "./Specialty";
+import { Interest } from "./Interest";
 
-import { Container, SpecialtiesWrapper } from "./styles";
+import { Container, InterestsWrapper } from "./styles";
 
-export const SpecialtiesSection = () => {
+export const InterestsSection = () => {
   const { t } = useTranslation();
 
-  const specialties = [
+  const interests = [
     {
       title: "UX Design",
       icon: BsHandIndex,
@@ -55,14 +55,14 @@ export const SpecialtiesSection = () => {
   ];
 
   return (
-    <Container id="specialties">
-      <SectionTitle>{t("common:section-title.specialties")}</SectionTitle>
+    <Container id="interests">
+      <SectionTitle>{t("common:section-title.interests")}</SectionTitle>
 
-      <SpecialtiesWrapper>
-        {specialties.map(({ title, icon }, index) => (
-          <Specialty key={index} index={index} Icon={icon} title={title} />
+      <InterestsWrapper>
+        {interests.map(({ title, icon }, index) => (
+          <Interest key={index} index={index} Icon={icon} title={title} />
         ))}
-      </SpecialtiesWrapper>
+      </InterestsWrapper>
     </Container>
   );
 };

@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 
-export const SpecialtyIConContainer = styled.div`
+export const IconWrapper = styled.div`
   border: 2px solid #fff;
   padding: 24px;
   border-radius: 50%;

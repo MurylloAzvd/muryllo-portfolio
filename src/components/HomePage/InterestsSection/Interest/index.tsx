@@ -1,18 +1,18 @@
 import { IconType } from "react-icons";
-import { Container, SpecialtyIConContainer } from "./styles";
+import { Container, IconWrapper } from "./styles";
 
-interface SpecialtyProps {
+interface InterestProps {
   title: string;
   Icon: IconType;
   index: number;
 }
 
-export const Specialty = ({ Icon, title, index }: SpecialtyProps) => {
+export const Interest = ({ Icon, title, index }: InterestProps) => {
   return (
     <Container data-aos="fade-up" data-aos-delay={(index + 1) * 100}>
-      <SpecialtyIConContainer>
+      <IconWrapper>
         <Icon />
-      </SpecialtyIConContainer>
+      </IconWrapper>
       <h2>{title}</h2>
     </Container>
   );

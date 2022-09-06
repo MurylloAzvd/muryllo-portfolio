@@ -4,7 +4,7 @@ import { Cover } from "./Cover";
 import { LanguageMenu } from "./LanguageMenu";
 import { ProjectsSection } from "./ProjectsSection";
 import { SkillsSection } from "./SkillsSection";
-import { SpecialtiesSection } from "./SpecialtiesSection";
+import { InterestsSection } from "./InterestsSection";
 
 export const HomePage = () => {
   return (
@@ -13,7 +13,7 @@ export const HomePage = () => {
       <Cover />
       <AboutSection />
       <SkillsSection />
-      <SpecialtiesSection />
+      <InterestsSection />
       <ProjectsSection />
       <ContactSection />
     </>
