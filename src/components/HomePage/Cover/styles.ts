@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  background-image: url("/cover.jpeg");
+  background-image: url("/cover.png");
   height: 100vh;
   width: 100%;
   background-position: center;
