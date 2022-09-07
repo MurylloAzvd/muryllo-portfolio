@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
   background-image: url("/cover.jpg");
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-position: center;
   background-size: cover;
