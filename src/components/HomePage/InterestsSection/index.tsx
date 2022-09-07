@@ -10,7 +10,7 @@ import {
   BsLightbulb,
 } from "react-icons/bs";
 
-import { SectionTitle } from "../../SectionTitle";
+import { SectionTitle } from "../SectionTitle";
 
 import { Interest } from "./Interest";
 

@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import axios from "axios";
 import useTranslation from "next-translate/useTranslation";
 
-import { SectionTitle } from "../../SectionTitle";
+import { SectionTitle } from "../SectionTitle";
 import { Loading } from "../../Loading";
 
 import { Container, FormContainer, ThankYouText } from "./styles";

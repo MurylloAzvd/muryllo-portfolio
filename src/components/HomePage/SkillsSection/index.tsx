@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import useTranslation from "next-translate/useTranslation";
 
-import { SectionTitle } from "../../SectionTitle";
+import { SectionTitle } from "../SectionTitle";
 
 import { Container, SliderContainer } from "./styles";
 import "slick-carousel/slick/slick.css";

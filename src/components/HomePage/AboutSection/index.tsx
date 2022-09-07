@@ -10,7 +10,7 @@ import {
 import useTranslation from "next-translate/useTranslation";
 import Trans from "next-translate/Trans";
 
-import { SectionTitle } from "../../SectionTitle";
+import { SectionTitle } from "../SectionTitle";
 
 import { PersonalInfo } from "./PersonalInfo";
 import { SocialMediaLink } from "./SocialMediaLink";

@@ -1,6 +1,6 @@
 import useTranslation from "next-translate/useTranslation";
 
-import { SectionTitle } from "../../SectionTitle";
+import { SectionTitle } from "../SectionTitle";
 
 import { ProjectCard } from "./ProjectCard";
 
