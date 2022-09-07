@@ -24,8 +24,8 @@ export const SideMenu = ({ isOpen, closeMenu }: SideMenuProps) => {
       label: t("section-title.skills"),
     },
     {
-      href: "/#specialties",
-      label: t("section-title.specialties"),
+      href: "/#interests",
+      label: t("section-title.interests"),
     },
     {
       href: "/#projects",

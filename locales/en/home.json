@@ -10,16 +10,6 @@
     "education": "IT - IMD/UFRN",
     "language": "Portuguese (Native) | English"
   },
-  "specialty-description": {
-    "ux-design": "UX design refers to the term “user experience design”, the main role of UX Design is to be concerned with each step with which the user interacts with the product or service; and make this interaction happen as smoothly as possible.",
-    "ui-design": "UI stands for “user interface design”. UI Design is primarily responsible for creating functional interfaces, which allow the user to intuitively navigate their entire journey.",
-    "seo": "SEO stands for “search engine optimization.” In simple terms, it means the process of improving your site to increase its visibility when people search for products or services related to your business in Google, Bing, and other search engines.",
-    "responsive-web-design": "Responsive web design is about creating web pages that look good on all devices. A responsive web design will automatically adjust for different screen sizes and viewports.",
-    "spa": "A SPA (single-page application) is an app that doesn’t need to reload the page during its use and works within a browser. The main advantage of single-page applications is its speed.",
-    "clean-code": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way.",
-    "scrum": "Scrum helps people and teams deliver value incrementally in a collaborative manner. If you are just getting started, think of it as a way to get work done as a team in small pieces at a time, with experimentation and feedback loops along the way.",
-    "mvp": "A minimum viable product is a version of a product with just enough features to be usable by early customers who can then provide feedback for future product development."
-  },
   "see-more": "See more",
   "contact-form": {
     "title": "Feel free to send me an email",

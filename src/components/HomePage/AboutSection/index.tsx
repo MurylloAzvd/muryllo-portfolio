@@ -22,6 +22,8 @@ import {
   ProfileImage,
   ProfileName,
   SocialMediaContainer,
+  VideoContainer,
+  IframeWrapper,
 } from "./styles";
 
 export const AboutSection = () => {
@@ -89,6 +91,17 @@ export const AboutSection = () => {
           <PersonalInfo key={index} Icon={icon} info={info} index={index} />
         ))}
       </PersonalInfoGrid>
+      {/* <VideoContainer>
+        <IframeWrapper>
+          <iframe
+            src="https://www.youtube.com/embed/94jC1EgvvqQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </IframeWrapper>
+      </VideoContainer> */}
     </Container>
   );
 };

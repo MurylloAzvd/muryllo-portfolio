@@ -19,7 +19,6 @@ export default function Cardiometrics() {
         "/projects/cardiometrics/cardiometrics1.png",
         "/projects/cardiometrics/cardiometrics2.png",
       ]}
-      link="https://www.instagram.com/cardiometrics/"
     />
   );
 }
