@@ -18,12 +18,12 @@ import { SocialMediaLink } from "./SocialMediaLink";
 import {
   AboutText,
   Container,
-  IframeWrapper,
   PersonalInfoGrid,
   ProfileImage,
   ProfileName,
   SocialMediaContainer,
   VideoContainer,
+  IframeWrapper,
 } from "./styles";
 
 export const AboutSection = () => {
@@ -91,7 +91,7 @@ export const AboutSection = () => {
           <PersonalInfo key={index} Icon={icon} info={info} index={index} />
         ))}
       </PersonalInfoGrid>
-      <VideoContainer>
+      {/* <VideoContainer>
         <IframeWrapper>
           <iframe
             src="https://www.youtube.com/embed/94jC1EgvvqQ"
@@ -101,7 +101,7 @@ export const AboutSection = () => {
             allowFullScreen
           />
         </IframeWrapper>
-      </VideoContainer>
+      </VideoContainer> */}
     </Container>
   );
 };
