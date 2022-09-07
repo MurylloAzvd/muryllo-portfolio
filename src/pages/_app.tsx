@@ -6,7 +6,7 @@ import NProgress from "nprogress";
 import useTranslation from "next-translate/useTranslation";
 import Head from "next/head";
 
-import { Footer } from "../components/FooterSection";
+import { Footer } from "../components/Footer";
 import { Menu } from "../components/Menu";
 import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
