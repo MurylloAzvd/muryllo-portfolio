@@ -38,9 +38,10 @@ export const FrontCard = styled.div`
 
   img {
     width: 100%;
+    height: 100%;
     max-height: 280px;
     border-radius: 16px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   h2 {

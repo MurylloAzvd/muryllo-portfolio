@@ -22,7 +22,7 @@ export default function ConfiaShop() {
         "/projects/confia-shop/confia13.png",
         "/projects/confia-shop/confia14.png",
       ]}
-      link="https://www.instagram.com/confiashopinsta/"
+      link="https://confia.shop/"
     />
   );
 }

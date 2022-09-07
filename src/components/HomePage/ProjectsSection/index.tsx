@@ -65,6 +65,13 @@ export const ProjectsSection = () => {
       technologies: ["React", "Typescript", "Styled Components", "Context API"],
       pageLink: "/projects/confia-shop",
     },
+    {
+      title: "LCC.hub",
+      description: t("project-description.lcc"),
+      logo: "/projects/lcc/logo.png",
+      technologies: ["React", "Typescript", "Next.Js", "Styled Components"],
+      pageLink: "/projects/lcc",
+    },
   ];
 
   return (
