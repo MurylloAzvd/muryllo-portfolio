@@ -91,17 +91,17 @@ export const AboutSection = () => {
           <PersonalInfo key={index} Icon={icon} info={info} index={index} />
         ))}
       </PersonalInfoGrid>
-      {/* <VideoContainer>
+      <VideoContainer>
         <IframeWrapper>
           <iframe
-            src="https://www.youtube.com/embed/94jC1EgvvqQ"
+            src="https://www.youtube.com/embed/mcvVvhNuxL8"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </IframeWrapper>
-      </VideoContainer> */}
+      </VideoContainer>
     </Container>
   );
 };

@@ -63,7 +63,7 @@ export const IframeWrapper = styled.div`
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 66.66%;
 
   > iframe {
     position: absolute;
