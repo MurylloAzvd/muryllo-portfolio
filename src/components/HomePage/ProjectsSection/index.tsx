@@ -24,13 +24,6 @@ export const ProjectsSection = () => {
       pageLink: "/projects/fretec",
     },
     {
-      title: "Desopila App",
-      description: t("project-description.desopila"),
-      logo: "/projects/desopila/logo.png",
-      technologies: ["React Native", "Context API"],
-      pageLink: "/projects/desopila",
-    },
-    {
       title: "Resolve Tudo",
       description: t("project-description.resolve-tudo"),
       logo: "/projects/resolve-tudo/logo.webp",
