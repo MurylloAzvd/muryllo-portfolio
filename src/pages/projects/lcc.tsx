@@ -8,7 +8,7 @@ export default function LCC() {
     <ProjectDetails
       title="LCC.hub"
       description={t("project-description.lcc")}
-      link="https://lcchub.com.br/"
+      link="https://www.sistema.lcchub.com.br/"
       images={[
         "/projects/lcc/lcc1.png",
         "/projects/lcc/lcc2.png",
