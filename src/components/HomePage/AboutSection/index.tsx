@@ -39,7 +39,7 @@ export const AboutSection = () => {
       icon: FaGithub,
     },
     {
-      href: "https://api.whatsapp.com/send?phone=5584988784881",
+      href: "https://api.whatsapp.com/send?phone=5584996903223",
       icon: FaWhatsapp,
     },
   ];
@@ -48,14 +48,6 @@ export const AboutSection = () => {
     {
       icon: FaHome,
       info: t("home:personal-info.address"),
-    },
-    {
-      icon: FaBirthdayCake,
-      info: t("home:personal-info.birthday"),
-    },
-    {
-      icon: FaUniversity,
-      info: t("home:personal-info.education"),
     },
     {
       icon: FaLanguage,

@@ -13,7 +13,7 @@ export const Cover = () => {
     <Container>
       <PresentationContainer data-aos="fade-up">
         <TypeWriterEffectContainer>
-          <h2>Front-End Developer</h2>
+          <h2>Software Developer</h2>
         </TypeWriterEffectContainer>
         <h1>{"< Muryllo />"}</h1>
         <a
