@@ -65,6 +65,20 @@ export const ProjectsSection = () => {
       technologies: ["React", "Typescript", "Next.Js", "Styled Components"],
       pageLink: "/projects/lcc",
     },
+    {
+      title: "Engegrout",
+      description: t("project-description.engegrout"),
+      logo: "/projects/engegrout/logo.png",
+      technologies: [
+        "React",
+        "Typescript",
+        "Styled Components",
+        "Sentry",
+        "Leaflet",
+        "WebSocket API",
+      ],
+      pageLink: "/projects/engegrout",
+    },
   ];
 
   return (

@@ -1,7 +1,7 @@
 import useTranslation from "next-translate/useTranslation";
 import { ProjectDetails } from "../../components/ProjectDetails";
 
-export default function Fretec() {
+export default function LCC() {
   const { t } = useTranslation("common");
 
   return (
