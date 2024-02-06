@@ -17,7 +17,9 @@ export const Cover = () => {
         </TypeWriterEffectContainer>
         <h1>{"< Muryllo />"}</h1>
         <a
-          href={`/resumes/resume-${lang === Language.EN ? "en" : "pt"}.pdf`}
+          href={`/resumes/resume-${
+            lang === Language.EN ? "en" : "pt"
+          }-muryllo.pdf`}
           download
           target="_blank"
           rel="noreferrer"

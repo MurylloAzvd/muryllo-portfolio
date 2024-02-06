@@ -1,8 +1,8 @@
 {
   "download-resume": "Download resume",
   "about-text": {
-    "first": "Passionate about <0>technology</0>. What inspires me is knowing that I can help create systems that can be used by thousands of people around the world.",
-    "second": "Currently working as a <0>Front-end</0> developer, developing <0>web</0> and <0>mobile</0> applications. Using as a tool, technologies such as: <0>HTML, CSS, JavaScript, TypeScript, ReactJS</0> and its ecosystem. In addition to other technologies that help in the development and integration of applications: <0>Git, Gitlab, VSCode, Postman, Figma, Styled-Components, Next.js</0>."
+    "first": "I am a technology enthusiast, constantly motivated by the potential to solve problems and generate value through software development. Throughout my career, I have had the privilege of working with amazing companies and professionals, which has significantly contributed to my growth.",
+    "second": "When I develop an application, I always prioritize the user experience, starting with understanding their needs and requirements, and then seeking a technical solution that meets their expectations. I believe that the success of a project is based on clear communication of objectives and constant feedback throughout the development process."
   },
   "personal-info": {
     "address": "Natal - RN, Brazil",
